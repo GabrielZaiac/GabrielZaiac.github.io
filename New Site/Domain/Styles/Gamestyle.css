@@ -1,0 +1,372 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#f00, #ff0, #0f0, #0ff, #00f, #f00);
+  border-radius: 9999999px;
+}
+
+
+
+
+
+
+
+
+
+*{
+	list-style-type: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: #fff;
+	user-select: none;
+	font-family: helvetica;
+}
+
+body{
+	background-color: #202122;
+	margin: 0px;
+	min-height: 100vh;
+}
+
+
+/*all*/
+.border{
+	background-color: #4448;
+	border: solid #ff3 2px;
+	border-radius: 25px;
+	position: absolute;
+	display: block;
+	top: 30px;
+	right: 130px;
+	left: 130px;
+	overflow: hidden;
+}
+
+
+
+
+/*bodyyyyyyyy*/
+.container{
+	display: flex;
+	justify-content: center;
+	margin-top: 46px;
+	margin-bottom: 36px;
+}
+
+.container:hover{
+	box-shadow: 0px 0px 10px #000, inset 0px 0px 10px #000;
+}
+
+.container #amem{
+	width: 240px;
+	height: 133px;
+	border-radius: 13px 0 0 13px;
+	border-top: solid #ff3 2px;
+	border-left: solid #ff3 2px;
+	border-bottom: solid #ff3 2px;
+}
+
+.ult{
+	margin-bottom: 69px;
+}
+
+.cner1{
+	margin-top: 120px;
+}
+
+
+/*-----------------*/
+.desc{
+	background-color: #ccc;
+	height: 133px;
+	width: 580px;
+	border-radius: 0 13px 13px 0;
+	border-top: solid #ff3 2px;
+	border-right: solid #ff3 2px;
+	border-bottom: solid #ff3 2px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+
+/*navigation :D*/
+nav{
+	background-color: #1119;
+	border-right: solid #fff 1px;
+	border-left: solid #fff 1px;
+	border-top: solid #fff 1px;
+	border-radius: 25px 25px 0 0;
+	position: absolute;
+	left: -1px;
+	top: -2px;
+	height: 69px;
+	width: 100%;
+	box-sizing: initial;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*navigation logo*/
+nav .logo a{
+	margin-left: -69px;
+	font-size: 2rem;
+	font-family: Helvetica;
+	background: linear-gradient(90deg, #f00, #ff0, #0f0, #0ff, #00f, #f00);
+	-webkit-background-clip: text;
+	background-repeat: repeat-x;
+	color: transparent;
+	cursor: pointer;
+	animation: beck 1.5s infinite linear;
+	text-shadow: 0px 0px 100px;
+	user-select: none;
+}
+
+@keyframes beck{
+	0%{
+		background-position: 0vh;
+	}
+	100%{
+		background-position: -46.1vh;
+	}
+}
+
+
+/*navigation search*/
+nav .search{
+	border: solid #ff3 1px;
+	border-radius: 10px;
+	margin-right: 90px;
+	display: flex;
+	font-size: 100px;
+}
+
+nav .search input{
+	border: 0px;
+	outline: none;
+	height: 23px;
+	width: 220px;
+	padding-left: 10px;
+	border-radius: 10px 0 0 10px;
+	background-color: transparent;
+}
+
+nav .search img{
+	border-radius: 0 10px 10px 0;
+	height: 23px;
+}
+
+
+
+/*navigation config*/
+nav .config #press{
+	min-height: 100vh;
+	display: none;
+}
+
+nav .config label img{
+	width: 43px;
+	margin-right: -69px;
+	transition: .43s ease-out;
+	cursor: pointer;
+}
+
+nav .config label img:hover{
+	transform: rotate(120deg);
+}
+
+.border nav .config .box{
+	display: none;
+	background-color: #2c2d33ed;
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	top: calc(69% + 10%);
+	right: 4.8%;
+	border: solid #fff 1px;
+	border-radius: 20px 10px 20px 20px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+nav .config #press:checked ~ .box{
+	display: flex;
+}
+
+
+.border nav .config .box p{
+	margin: 0px;
+}
+
+
+.border .config .box #a,#b{
+	font-family: Helvetica;
+}
+.border .config .box #a{
+	font-size: 2.3rem;
+	color: #888b;
+}
+.border .config .box #b{
+	font-size: 1.4rem;
+	color: #666;
+}
+
+
+
+
+
+
+footer {
+	background: #ee3d;
+	width: 100%;
+	height: 140px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0px;
+	flex-direction: column;
+}
+
+footer div{
+	color: #111;
+	font-size: 2rem;
+}
+
+.min{
+	cursor: pointer;
+}
+
+.imp{
+	font-family: Minecrafter;
+	display: none;
+	position: absolute;
+	bottom: 0px;
+
+}
+
+.min:hover ~ .imp{
+	display: block;
+}
+
+
+
+
+
+
+.desc p{
+	margin: 0px;
+}
+
+#Minecraft{
+	font-family: Minecrafter, sans-serif;
+	color: #555;
+	font-size: 2.4rem;
+	margin-left: 36px;
+	text-shadow: 6px 6px 2px #000;
+}
+
+#Valley{
+	font-family: cursive;
+	color: #ffb112;
+	font-size: 2.4rem;
+	margin-left: 36px;
+	text-shadow: 0px 0px 15px #ccc112;
+}
+
+#Fortnite{
+	font-family: arial;
+	color: #0ff;
+	font-size: 2.4rem;
+	margin-left: 36px;
+	letter-spacing: 0px;
+	text-shadow: 0px 0px 8px  #000;
+}
+
+#GTA{
+	font-family: helvetica;
+	color: #000;
+	font-size: 2.4rem;
+	margin-left: 36px;
+	font-weight: 900;
+}
+
+#Cs{
+	font-family: verdana;
+	color: #333;
+	font-size: 2rem;
+	margin-left: 36px;
+}
+
+#Osu{
+	font-family: cursive;
+	color: #fd93a9;
+	font-size: 2.4rem;
+	margin-left: 36px;
+	font-weight: bold;
+}
+
+#SMW{
+	font-family: fantasy;
+	background: linear-gradient(90deg, #0f0, #44f, #ff0, #f00, #0f0);
+	-webkit-background-clip: text;
+	color: transparent;
+	font-size: 2.4rem;
+	margin-left: 36px;
+
+}
+
+#BloonsTd6{
+	font-family: cursive;
+	color: #0dde;
+	font-size: 2.4rem;
+	margin-left: 36px;
+	font-weight: bold;
+	text-shadow: 3px 3px 1px #666;
+}
+#um{
+	color: #fc3;
+}
+#dois{
+	color: #f80;
+}
+
+#Albion{
+	font-family: arial;
+	color: #000;
+	font-size: 2.4rem;
+	margin-left: 36px;
+}
+
+.desc .play #magi{
+	width: 60px;
+	height: 60px;
+	border: none;
+	margin-right: 46px;
+	cursor: pointer;
+	transition: 0.6s ease-in-out;
+	background-color: #0f0;
+	border-radius: 50px;
+}
+
+.play #magi:hover{
+	transform: rotate(360deg);
+}
+
+#rat{
+	margin-left: 36px;
+	font-size: 1.9rem;
+	color: #333;
+	display: flex;
+}
